@@ -1,0 +1,120 @@
+/*1. General*/
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	background: linear-gradient(to right, #141e30, #243b55);
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	color: white;	
+	text-shadow: 1px 1px 2px black;
+}
+/*2. Title*/
+h1{
+	font-size: 3rem;
+	text-align: center;
+	font-variant: small-caps;
+	border: solid 3px white;
+	border-radius: 10px;
+	margin: 0 auto 0 auto;
+	padding: 1rem;
+	background: #4e41a6;
+}
+/*3. Options*/
+.options{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2vh 20vw 2vh 20vw;
+	font-size: 1.3rem;
+	background: #4e41a6;
+	border-radius: 10px;
+	padding: 1rem;	
+	border: solid 3px white;
+	font-variant: small-caps;
+}
+.options p{
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+.character_section{
+	text-align: center;
+}
+.check{
+	margin-left: 20%;
+}
+input[type="checkbox"], input[type="number"]{
+	filter: invert(100%) hue-rotate(270deg) brightness(1.7)
+}
+input[type="number"]{
+	width: 3rem;
+}
+/*4. Password section*/
+.answer_section{	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin: 0 auto 0 auto;	
+}
+/*4.1 Password*/
+#password{	
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	background-color: white;
+	width: 40vw;
+	border: solid 3px black;
+	border-radius: 10px;
+	overflow-wrap: break-word;	
+	padding: 1rem;
+}
+#password p{
+	color: #141e30;
+	animation: appearing 0.5s 1;	
+	text-align: center;
+	font-size: 2rem;
+	margin: 0;	
+	text-shadow: none;
+}
+@keyframes appearing {
+	0%{
+		opacity: 0;
+		transform: translateY(5px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/*4.2 New and Copy Buttons*/
+#new, #copy{
+	text-align: center;
+	background: #4e41a6;
+	color: white;
+	text-decoration: none;
+	display: block;
+	font-variant: small-caps;
+	font-size: 2rem;
+	cursor: pointer;
+	padding: 0.9rem;
+	border-radius: 10px;
+	transition: 0.2s;
+	text-shadow: 1px 1px 2px black;
+}
+#new img, #copy img{
+	width: 30px;
+	height: 30px;
+}
+#new:hover, #copy:hover{
+	transition: 0.2s;
+	filter: brightness(1.5);
+}
